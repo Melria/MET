@@ -1,5 +1,4 @@
-
-
+import { Link } from "react-router-dom"
 
 export const ScreenDetails =()=> {
 
@@ -8,7 +7,7 @@ export const ScreenDetails =()=> {
         <div className="filter_p">
              <p className="met">MET</p>
              <p className="headTitle_p">ElectroMechanical projects</p>
-             <p className="headText_p"><a href="index.html" className="home">Home</a> | Electromechanical projet</p>
+             <p className="headText_p"><Link to='/' className="home">Home</Link> | Electromechanical projet</p>
         </div>  
         
     </div>

@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from "react-scroll"
+import { ScreenDetails } from './screenDetails'
+import { Footer } from './footer'
 import project01 from '../../public/images/projectpage1.png'
 import project02 from '../../public/images/projectpage2.png'
 
@@ -27,6 +29,8 @@ export const BodyDetails=()=> {
       };
   }, []);
   return (
+    <>
+    <ScreenDetails />
     <div className="bodyDetails" id="bodyDetails">
         <div className="navbar01">   
             <nav className="navigation01">
@@ -115,5 +119,7 @@ export const BodyDetails=()=> {
 
             </div>
     </div>
+    <Footer />
+    </>
   )
 }
