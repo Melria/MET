@@ -1,13 +1,13 @@
-import facebook from '../../public/images/facebook.png'
-import twitter from '../../public/images/twitter.png'
-import indeed from '../../public/images/indeed.png'
-import youtube from '../../public/images/youtube.png'
-import dribble from '../../public/images/dribble.png'
-import behance from '../../public/images/behance.png'
+import facebook from '/images/facebook.png'
+import twitter from '/images/twitter.png'
+import indeed from '/images/indeed.png'
+import youtube from '/images/youtube.png'
+import dribble from '/images/dribble.png'
+import behance from '/images/behance.png'
 
-import mail from '../../public/images/icon_mailDark.png'
-import location from '../../public/images/icon_location.png'
-import phone from '../../public/images/icon_callDark.png'
+import mail from '/images/icon_mailDark.png'
+import location from '/images/icon_location.png'
+import phone from '/images/icon_callDark.png'
 
 import { Link } from "react-scroll"
 

@@ -1,21 +1,21 @@
 [
     {
         "index":1,
-        "image":"../../public/images/projectpage1.png",
+        "image":"/images/projectpage1.png",
         "date":"22 June 2022",
         "title":"Optimization of Electromechanical Skills with Specialized Tutoring",
         "description":"MET offers interactive electromechanics tutoring, focused on developing skills in Arduino, AutoCAD and SolidWorks to optimize learner productivity."
     },
     {
         "index":2,
-        "image":"../../public/images/projectpage2.png",
+        "image":"/images/projectpage2.png",
         "date":"02 April 2024",
         "title":"Creation of prototypes with electronic softwares",
         "description":"MET realises some of their projects using electronic softwares such as Mount River, MPLAB. These softwares are used to program a microcontroller to control a system depending on the activities to be performed by the prototype."
     },
     {
         "index":3,
-        "image":"../../public/images/projectpage3.jpg",
+        "image":"/images/projectpage3.jpg",
         "date":"22 June 2022",
         "title":"Student Support",
         "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure..."

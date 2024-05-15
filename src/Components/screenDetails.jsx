@@ -8,8 +8,7 @@ export const ScreenDetails =()=> {
              <p className="met">MET</p>
              <p className="headTitle_p">ElectroMechanical projects</p>
              <p className="headText_p"><Link to='/' className="home">Home</Link> | Electromechanical projet</p>
-        </div>  
-        
+        </div>      
     </div>
   )
 }

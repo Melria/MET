@@ -1,7 +1,7 @@
-import brain from '../../public/images/icon_brain_circuit.png';
-import key from '../../public/images/icon_key.png';
-import dataArea from '../../public/images/icon_data_area.png';
-import trending from '../../public/images/icon_arrow_trending_lines.png';
+import brain from '/images/icon_brain_circuit.png';
+import key from '/images/icon_key.png';
+import dataArea from '/images/icon_data_area.png';
+import trending from '/images/icon_arrow_trending_lines.png';
 
 
 

@@ -1,21 +1,21 @@
 [
     {
         "index":1,
-        "image":"../../public/images/img1.png",
+        "image":"/images/img1.png",
         "name":"ANGE-BONY",
         "post":"CEO of AJEL",
         "description":"Thanks to MET's tutoring, I was able to master complex software like AUTOCAD and SOLIDWORKS in record time. Their trainers are extremely competent and educational. Today, I am more confident in my professional projects."
     },
     {
         "index":2,
-        "image":"../../public/images/img2.png",
+        "image":"/images/img2.png",
         "name":"DOUGMENE FRANKNEL",
         "post":"CEO of PEASON EDUCATION",
         "description":"The certification I obtained through MET really boosted my career. The training is well structured, and the staff is very encouraging. I recommend MET to all electromechanical professionals."
     },
     {
         "index":3,
-        "image":"../../public/images/img3.png",
+        "image":"/images/img3.png",
         "name":"FOGUE PONY",
         "post":"CEO DECODE",
         "description":"MET's Project Analysis service has transformed the way I work. Their methodical approach and attention to detail allowed me to optimize my projects and save time and money. I am very satisfied with the results!"

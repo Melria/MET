@@ -65,7 +65,7 @@ a{
 .header{
     width: 100%;
     height: 100vh;
-    background-image: url(/public/images/headImg.png);
+    background-image: url(/images/headImg.png);
     background-position: center;
     background-size: cover;
     z-index: 0;
@@ -122,7 +122,7 @@ a{
     display: none;
     opacity: 0;
 }
-@media only screen and (max-width: 765px){
+@media only screen and (max-width: 768px){
   nav{
       position: fixed;
       top: 0;
@@ -135,7 +135,7 @@ a{
       justify-content: center;
       align-items: center;
       transition: transform 0.5s;
-      transform: translateY(100vh);
+      transform: translateY(-100vh);
       z-index: 999;
   }
   nav .a{
@@ -157,12 +157,12 @@ a{
       visibility: visible;
       opacity: 1;
       font-size: 1.5rem;
-      margin: 10px;
   }
   .nav-close-btn{
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 0px;
+      right: 0px;
+      left: 200px;
       background: transparent;
       border: none;
       outline: none;
@@ -173,7 +173,7 @@ a{
       height: 100vh;
   }
   .filter{
-      padding-top: 100px;
+      padding: 130px 50px;
   }
   .headTitle{
       font-size: 24px;
@@ -188,8 +188,17 @@ a{
   }
   .navbar{
       width: 100%;
-      height: 7vh;
+      height: 10vh;
   }
+  .header{
+    width: 100%;
+    height: auto;
+    background-image: url(/images/headImg.png);
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    text-align: center;
+}
 }
 /*************************projectPlatform***************************/
 .projectPlatform{
@@ -233,12 +242,12 @@ a{
     border: 2px solid var(--orangeYellow);
     border-radius: 10px; 
 }
-@media only screen and (max-width: 765px){
+@media only screen and (max-width: 768px){
     .projectPlatform{
         display: flex;
         flex-direction: column;
         gap: 5px;
-        width: 100vw;
+        width: 100%;
         height: 100%;
         padding: 50px;   
     }
@@ -253,6 +262,7 @@ a{
     .description0{
         width: 100%;
         font-size: 16px;
+        text-align: justify;
     }
     .projectButton{
         width: 150px;
@@ -312,23 +322,24 @@ a{
     font-size: 20px;
     color: var(--secondaryText);  
 }
-@media only screen and (max-width: 765px){
+@media only screen and (max-width: 768px){
     .about{
-        width: 500px;
-        height: 130vh;
+        width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column; 
         margin-top: 10%;
     }
     .aboutImg img{
-        height: 60vh; 
-        width: 500px; 
+        height: 30vh; 
+        width: 100%; 
     }
     .aboutText{
-        width: 400px;
+        width: 350px;
         height: 100%;
         position: relative;
         right: 70px;
+        text-align: justify;
     }
     .aboutButton{
         width: 150px;
@@ -341,7 +352,7 @@ a{
     }
     .description1{
         font-size: 16px;
-
+       
     }
     
 }
@@ -403,11 +414,11 @@ a{
     line-height: 40px;
     color: var(--secondaryText);
 }
-@media only screen and (max-width: 765px){
+@media only screen and (max-width: 768px){
     .statistics{
-        width: 500px;
+        width: 100%;
         margin: 150px 0px;
-        height: 70vh;
+        height: auto;
     }
     .title2{
         font-family: 'Manrope';
@@ -441,17 +452,18 @@ a{
         padding: 20px 0px;
     }
     .stats{
-        width: 450px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        padding-right: 10px;
+        position: relative;
+        left: 70px;
     }
    .description2{
     font-size: 18px;
     width: 400px;
     padding: 40px;
     line-height: 30px;
-
+    text-align: justify;
    }
     
 } 
@@ -467,8 +479,9 @@ a{
     width: 50%;
     height: 100%;
     padding: 200px 100px;
-   position: relative;
-   left: 60px;
+    position: relative;
+    left: 60px;
+    font-family: 'Open Sans';
 }
 .title3{
     font-size: 36px;
@@ -478,6 +491,7 @@ a{
 .description3{
     color: var(--secondaryText);
     font-size: 19px;
+    font-family: 'Open Sans';
 }
 .servicesValue{
     width: 50%;
@@ -485,6 +499,7 @@ a{
     display: flex;
     gap: 50px;
     padding-left: 100px;
+    font-family: 'Open Sans';
 }
 .leftImg{
  display: flex;
@@ -527,24 +542,23 @@ a{
 .serviceDescription{
     font-size: 14px;
     color: var(--secondaryText);
+    font-family: 'Open Sans';
+    text-align: left;
 }
-@media only screen and (max-width: 765px){
+@media only screen and (max-width: 768px){
     .services{
-        width: 500px;
-        height: 1650px;
+        width: 100%;
+        height: auto;
         display: flex;
-        flex-direction: column;
-       position: relative;
-       right: 20px;
+        flex-direction: column;       
     }
     .servicesText{
-        width: 500px;
-        padding: 10px 100px;
-        position: relative;
-        left: 0px;
+        width: 100%;
+        margin: 2px -60px;
+        padding: 0 20px; 
     }
     .servicesValue{
-        width: 50%;
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -555,6 +569,10 @@ a{
 
     .rightImg div:nth-child(1){
         margin-top: 30px;
+    }
+    .description3{
+      text-align: justify;
+      padding-right: 20px;
     }
 }
 /******************************testimonial************************/
@@ -598,9 +616,10 @@ h1{
 .post{
     font-size: 14px;
 }
-@media only screen and (max-width: 765px){
+@media only screen and (max-width: 768px){
     .testimonials{
-        height: 150vh;
+      width: 100%;
+        height: auto;
         position: relative;
         right: 70px;
     }
@@ -651,23 +670,24 @@ h1{
   font-family: 'Open Sans';
   color: var(--orangeYellow);
 }
-@media only screen and (max-width: 765px){
+@media only screen and (max-width: 768px){
     .projects{
-        width: 660px;
-        height: 1460px;
+        width: 100%;
+        height: auto;
         position: relative;
         right: 50px;
     }
+    .pro{
+      width: 350px;
+    }
     .cards_P{
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 50px;
         margin: 50px 0px;
         position: relative;
         right: 50px;
-    }
-    .descProject{
-       padding-right: 100px; 
     }
 }
 /*******************************contact*********************/
@@ -715,7 +735,7 @@ h1{
   }
     
   .block7Form {
-    width: 500px;
+    width: fit-content;
     height: 55vh;
     margin-right: 100px;
   }
@@ -730,6 +750,7 @@ h1{
     gap: 10px;
     margin-top: 30px;
   }
+  
   .themeMessage{
     display: flex;
     flex-direction: column;
@@ -757,27 +778,42 @@ h1{
     color: var(--activeMenu);
     align-self: flex-end;
   }
-  @media only screen and (max-width: 765px){
+  @media only screen and (max-width: 768px){
     .Block7{
         display: flex;
         flex-direction: column;
-        width: 670px;
-        height: 1100px;
+        width: 100%;
+        height: auto;
         position: relative;
-        right: 50px;
+        right:  0px;
+    }
+    .block7Form {
+      width: 100%;
+      height: auto;
+      margin-right: 0px;
     }
     .block7Text{
         margin-left: 0px; 
         margin-right: 150px; 
     }
     .nameEmail{
-        width: 400px;
         display: flex;
-        padding: 20px; 
+        padding: 0px; 
+        gap: 25px;
+        position: relative;
+        right: 95px;
+        /* border: 1px solid black; */
+      
+    flex-direction: column;
     }
     .themeMessage{
-        width: 400px;
-        padding: 20px;
+        padding: 0px;
+        position: relative;
+        right: 95px;
+    }
+    .input{
+      margin-left: 100px;
+      padding: 3px;
     }
   }
   /*********************footer********************/
@@ -838,8 +874,7 @@ h1{
   .block8 .textBlock8 {
     /* padding: 0 63px; */
     width: 30%;
-    margin-right: 90px;
-   
+    margin-right: 90px; 
   }
   
   .textBlock8 .titreBlock8 {
@@ -941,10 +976,10 @@ h1{
   }
   .Hr{
     width: 1050px;
-    height:2px;
+    height: 2px;
     background:#fff;
-    position:relative;
-    margin-left:150px
+    position: relative;
+    margin-left: 150px
   }
   .a{ 
     text-decoration: none;
@@ -969,13 +1004,14 @@ h1{
   .afterFooter p:nth-child(3){
     margin-left: 130px;
   }
-  @media only screen and (max-width: 765px){
+  @media only screen and (max-width: 768px){
     .block8 {
         display: flex;
         flex-direction: column;
         gap: 2%;
         background-color: var(--orangeYellow);
-        height: 40vh;
+        height: auto;
+        width: 100%;
         align-items: center;
         justify-content: right;
       }
@@ -984,6 +1020,7 @@ h1{
         display: flex;
         flex-direction: row;
         width: 100%;
+        width: 100%;
       }
       
       .block8 .InputTextBlock8 {
@@ -991,9 +1028,9 @@ h1{
         background-color: #C9DCEC;
         align-items: center;
         display: flex;
-        margin-left: 10px;
+        margin-left: 30px;
         border-radius: 6px 0 0 6px;
-        width: 50%;
+        width: 300px;
       }
       
       .block8 .InputTextBlock8 input {
@@ -1004,7 +1041,8 @@ h1{
       }
       
       .block8 .sendBlock8 {
-        height: 50px;
+        width: 100%;
+        height: auto;
         background-color: #fff;
         align-items: center;
         display: flex;
@@ -1027,7 +1065,8 @@ h1{
         width: 400px;
       }
       .footer {
-        width: 460px;
+        width: 100%;
+        height: auto;
         background-color: var(--orangeYellow);
         color: #fff;
       }
@@ -1123,7 +1162,7 @@ h1{
         margin-left: 20px;
       }
       .Hr{
-        width: 500px;
+        width: 100%;
         height:2px;
         background:#fff;
         position:relative;
@@ -1173,6 +1212,14 @@ h1{
 .home{
   color: var(--secondaryText);
 }
+@media only screen and (max-width: 768px){
+  .header_d{
+    height: auto;
+  }
+  .filter_p{
+    padding-top: 150px;
+  }
+}
 
 /************************bodyProject**************************/
 .navbar01{
@@ -1208,7 +1255,7 @@ h1{
   position: relative;
   right: 4px;
 }
-@media only screen and (max-width: 765px){
+@media only screen and (max-width: 768px){
   .navbar01{
       position: fixed;
       top: -600px;
@@ -1216,7 +1263,7 @@ h1{
       width: 100%;
       height: 100%;
       background: var(--orangeYellow);
-      display: flex;
+      display: none;
       flex-direction: column;
       gap: 1.5rem;
       justify-content: center;
@@ -1225,7 +1272,7 @@ h1{
       transform: translateY(-1000vh);
   }
   .navbar01 .aa{
-    position: relative;
+      position: relative;
       top: 300px;
       color: var(--activeMenu);
       margin-right: 40%;
@@ -1238,15 +1285,14 @@ h1{
       text-decoration: underline;
   }
 }
-.projectBody{
-  height: 40vh;
-}
 .aa{
  color: #000;
  font-family: 'Open Sans';
  width: 100px;
 }
 .projectBody{
+  height: auto;
+  width: 100%;;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -1258,7 +1304,7 @@ h1{
 }
 #project01{
   width: 100%;
-  height: 150vh;
+  height: 170vh;
 }
 #project02{
   width: 100%;
@@ -1319,18 +1365,37 @@ h1{
 .descImg, ul{
   font-size: 18px;
 }
-@media only screen and (max-width: 765px){
+
+
+.nameEmail div{
+  gap: 10px;
+  flex-direction: column;
+  display: flex;
+
+}
+
+@media only screen and (max-width: 768px){
+  .bodyDetails{
+    width: 100%;
+  }
   .projectBody{
-    height: 430vh;
-    width: 300px;
-   position: relative;
-   right: 600px;
-   padding: 20px;
+    height: 400vh;
+    width: 100%;
+    position: relative;
+    right: 600px;
+    padding: 20px;
   }
   .containerDetails_P{
     width: 350px;
   }
   .detailText{
+    width: 340px;
+    text-align: justify;
+  }
+  .h1Detail{
+    font-size: 24px;
+  }
+  .wm{
     width: 340px;
   }
   .containerDetails_P img{
@@ -1338,10 +1403,18 @@ h1{
   }
   #project01{
     width: 100%;
-    height: 200vh;
+    height: 150vh;
+    text-align: justify;
   }
   #project02{
     width: 100%;
-    height: 130vh;
+    height: 90vh;
+    text-align: justify;
   }
+  #project03{
+    text-align: justify;
+    width: 100%;
+    height: 30vh;
+  }
+
 }

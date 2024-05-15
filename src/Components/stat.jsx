@@ -1,9 +1,9 @@
-import logo1 from '../../public/images/logo_1.png'
-import logo3 from '../../public/images/logo_3.png'
-import logo4 from '../../public/images/logo_4.png'
-import logo5 from '../../public/images/logo_5.png'
-import logo6 from '../../public/images/logo_6.png'
-import logo7 from '../../public/images/logo_7.png'
+import logo1 from '/images/logo_1.png'
+import logo3 from '/images/logo_3.png'
+import logo4 from '/images/logo_4.png'
+import logo5 from '/images/logo_5.png'
+import logo6 from '/images/logo_6.png'
+import logo7 from '/images/logo_7.png'
 
 
 

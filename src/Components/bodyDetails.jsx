@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import { Link } from "react-scroll"
 import { ScreenDetails } from './screenDetails'
 import { Footer } from './footer'
-import project01 from '../../public/images/projectpage1.png'
-import project02 from '../../public/images/projectpage2.png'
+import project01 from '/images/projectpage1.png'
+import project02 from '/images/projectpage2.png'
 
 
 export const BodyDetails=()=> {
@@ -82,7 +82,7 @@ export const BodyDetails=()=> {
             <div className='projectBody'>
                     <div id="abtUs">
                         <div className='containerDetails'>
-                            <p className='h1Detail'>What is MET?</p>
+                            <p className='h1Detail wm'>What is MET?</p>
                             <p className='detailText'>MET, or Méganique and Electro Technologies, is a company specializing in the field of electromechanical engineering. It offers a range of services aimed at supporting professionals and companies in their electromechanical projects, including tutoring, certification, project analysis and project design. Using advanced software like AUTOCAD, SOLIDWORKS, MPLAB, PROTEUS, AUTOMATION STUDIO, TIA PORTAL and EXCEL, MET offers innovative solutions and quality training to help clients achieve their professional goals and excel in their fields.</p>
                         </div>
                     </div>

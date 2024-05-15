@@ -1,4 +1,6 @@
 import data from '../data/projects.json'
+import { Link } from "react-router-dom"
+
 
 export const Projects=()=> {
   return (
@@ -8,7 +10,7 @@ export const Projects=()=> {
           {data.map((data) => (
             <div className="cardBox_P" key={data.index}>
              
-                <div className='testimonialImg' style={{position:'relative',left:'25px'}}>
+                <div className='testimonialImg pro' style={{position:'relative',left:'25px'}}>
                     <img
                   src={data.image}
                   alt={data.name}
@@ -18,7 +20,7 @@ export const Projects=()=> {
                   <p style={{position:'relative', top:'10px',color:'#9497A1'}}>{data.date}</p>
                   <p style={{fontWeight: 500, fontSize:'24px'}}>{data.title}</p>
                   <p style={{color:'#9497A1'}} className='descProject'>{data.description}</p>
-                  <p style={{cursor:'pointer', color:'#FDAD15'}}><a  href="details.html" className="b">Read more –›</a></p>
+                  <p style={{cursor:'pointer', color:'#FDAD15'}}><Link  to='/details' className="b">Read more –›</Link></p>
               </div>
             </div>
           ))}
